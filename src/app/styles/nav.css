@@ -1,0 +1,25 @@
+@import url('globals.css');
+
+.nav-bar{
+    background-color: var(--foreground);
+    display: flex;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    justify-content: space-between;
+}
+.menu-links, .menu-about{
+    display: flex;
+    padding: 40px;
+}
+
+.menu-item{
+    padding: 10px;
+    font-size: 18px;
+}
+.menu-links .menu-item a:hover{
+    color: var(--components-color);
+}
