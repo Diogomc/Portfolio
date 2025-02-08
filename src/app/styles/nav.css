@@ -13,6 +13,7 @@
 }
 .menu-links, .menu-about{
     display: flex;
+    align-items: center;
     padding: 40px;
 }
 

@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        title:['Roboto', 'sans-serif', 'arial', 'oswald']
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
