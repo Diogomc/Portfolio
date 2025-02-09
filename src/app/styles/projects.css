@@ -1,0 +1,35 @@
+@import url(globals.css);
+
+.title{
+    font-size: 1.5rem;
+    margin-top: 250px;
+}
+.projects-area{
+    display: flex;
+
+}
+.card-projects{
+    background-color: var(--foreground);
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    color: #ccc;
+    border-radius: 20px;
+}
+.project-image{
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+}
+.project-image:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+}
+.project-description {
+    padding: 20px;
+    font-size: 1.2rem;
+}
+.project-title{
+    padding: 20px;
+    font-size: 1.5rem
+}

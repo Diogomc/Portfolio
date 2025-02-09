@@ -1,23 +1,27 @@
-.container{
+.container-main{
+    margin-top: 250px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    margin: 300px;
 }
-
-
 .title-typewriter{
-    font-family: 'oswald';
     width: 900px;
+    font-family: 'oswald';
+    font-weight: 300;
+}
+.text-description{
+    color: #ccc;
+    font-size: 30px;
+    padding-top: 10px;
 }
 .handsome-image{
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
 }
+
 .handsome-image:hover{
-    opacity: 0.7;
-    border-radius: 50px 0 50px 0;
+    opacity: 0.6;
     transition: 0.9s;
+    border-radius: 0 60px 0 60px;
 }
