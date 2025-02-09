@@ -16,9 +16,14 @@
   :root {
   }
 }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family:  sans-serif;
+  font-family:  'roboto';
 }

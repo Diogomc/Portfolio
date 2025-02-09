@@ -14,11 +14,10 @@
 .menu-links, .menu-about{
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
 }
-
 .menu-item{
-    padding: 10px;
+    padding: 20px;
     font-size: 18px;
 }
 .menu-links .menu-item a:hover{
