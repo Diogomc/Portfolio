@@ -1,0 +1,34 @@
+@import url('globals.css');
+
+.title-about{
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px;
+    margin: 200px 0 100px 0;
+    color: #fff;
+}
+.title-about-text{
+    color: var(--components-color);
+    font-size: 1.9rem;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartoon-image{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.text-about{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 70px;
+    width: 700px;
+}
+.text-about p{
+    padding: 3px;
+}

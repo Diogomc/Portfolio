@@ -1,4 +1,5 @@
 'use client'
+import { About } from "@/components/About";
 import { Main } from "@/components/Main";
 import { Nav } from "@/components/Nav";
 import { Projects } from "@/components/Projects";
@@ -32,6 +33,7 @@ export default function Home() {
         tools={["javascript", "css"]}
         />
         </div>
+        <About/>
       </div>
   );
 }
