@@ -13,24 +13,24 @@ export default function Home() {
       <div className="flex justify-center">
         <Projects
           urlImage="kepler.jpg"
-          nameProject="KeplerPlay - in production"
+          nameProject="KeplerPlay - In development"
           urlProject="https://kepler-play.vercel.app/"
           descriptionProject="A project of a stream movies plataform"
           tools={["typescript", "react", "tailwind", "css"]}
         />
         <Projects
           urlImage="coffeeShop.png"
-          nameProject="Coffee Shop - In Production"
+          nameProject="Coffee Shop - In development"
           urlProject="https://english-coffee-shop.vercel.app/"
           descriptionProject="A Project of a Coffee Shop website"
           tools={["css", "tailwind"]}
         />
         <Projects
-        urlImage="stopwatch.png"
-        nameProject="StopWatch"
-        urlProject="https://stopwatch-five-psi.vercel.app/"
-        descriptionProject="A simple, but eficient Stopwatch. You can use for anythings, for example when you working out."
-        tools={["javascript", "css"]}
+        urlImage="weather.png"
+        nameProject="Smart Weather - In development"
+        urlProject="https://weather-app-rho-black-11.vercel.app/"
+        descriptionProject="A Weather forecast consultation software"
+        tools={["typescript", "react", "css"]}
         />
         </div>
         <About/>

@@ -8,7 +8,7 @@ export const Nav = () => {
         <nav className="nav-bar">
             
             <ul className="menu-about">
-                <li className="menu-item"><a href="#">Diogo Marcondes</a></li>
+                <li className="menu-item"><a href="https://www.linkedin.com/in/diogo-marcondes/" target="_blank">Diogo Marcondes</a></li>
                 <li className="menu-item">Front-end Developer</li>
             </ul>
             <ul className="menu-links">
