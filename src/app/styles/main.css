@@ -25,3 +25,25 @@
     transition: 0.9s;
     border-radius: 0 60px 0 60px;
 }
+
+@media screen and (max-width: 480px) {
+  
+    .container-main{
+        margin-top: 120px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .title-typewriter{
+        width: 400px;
+    }
+    .title-typing{
+        font-size: 2.6rem;
+    }
+    .text-description{
+        font-size: 25px;
+        padding: 10px;
+    }
+    .handsome-image{
+        padding: 20px;
+    }
+}

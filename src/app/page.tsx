@@ -9,8 +9,8 @@ export default function Home() {
     <div>
       <Nav />
       <Main />
-      <h1 className="title-main" id="projects-section">Main Projects</h1>
-      <div className="flex justify-center">
+      <h1 className="title-main-projects" id="projects-section">Main Projects</h1>
+      <div className="projects flex justify-center">
         <Projects
           urlImage="kepler.jpg"
           nameProject="KeplerPlay - In development"

@@ -1,8 +1,16 @@
 @import url('globals.css');
 
+.menu-mobile{
+    width: 40px;
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .nav-bar{
     background-color: var(--foreground);
-    display: flex;
     color: #fff;
     position: fixed;
     left: 0;
@@ -22,4 +30,31 @@
 }
 .menu-links .menu-item a:hover{
     color: var(--components-color);
+}
+
+@media screen and (max-width: 480px){
+    .menu{
+        justify-content: center;
+        display: none;
+        
+    }
+    .menu-opened{
+        display: block;
+    }
+    .menu-mobile{
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        transition: transform 3s ease, opacity 3s ease; /* Transições suaves para a entrada do menu */
+
+    }
+    
+
+    .menu-links{
+        flex-direction: column;
+    }
+    .menu-about{
+        display: none;
+    }
 }

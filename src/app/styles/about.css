@@ -32,3 +32,14 @@
 .text-about p{
     padding: 3px;
 }
+
+@media screen and (max-width: 480px) {
+    .about-container{
+        flex-direction: column;
+    }
+    
+    .text-about{
+        width: 400px;
+
+    }
+}

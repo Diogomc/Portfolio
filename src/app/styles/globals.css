@@ -26,11 +26,20 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family:  'roboto';
+  cursor: url(/portfolio-tsx/public/cursor.png) 15 15;
 }
-.title-main{
+.title-main-projects{
     text-align: center;
     font-size: 3rem;
     padding: 30px;
     margin: 200px 0 100px 0;
     color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .projects{
+    flex-direction: column;
+  }
+  .title-main-projects{
+    margin-top: 20px;
+  }
 }
