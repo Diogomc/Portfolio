@@ -9,10 +9,28 @@
     font-family: 'oswald';
     font-weight: 300;
 }
+.title-type{
+    display: flex;
+    align-items: center;
+}
+.title-writing{
+    color: #78ABA8;
+}
 .text-description{
     color: #ccc;
     font-size: 30px;
     padding-top: 10px;
+}
+.btn-main{
+    background-color: #78ABA8;
+    font-size: 1.7rem;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 20px 10px 0 0;
+}
+.btn-main:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
 }
 .handsome-image{
     width: 600px;
@@ -25,6 +43,7 @@
     transition: 0.9s;
     border-radius: 0 60px 0 60px;
 }
+
 
 @media screen and (max-width: 480px) {
   

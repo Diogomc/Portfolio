@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #2D2D2D;
-  --foreground: #1A1A1A;
+  --background: #fff;
+  --foreground: #F0EBE3;
   --font-color: #E0E0E0;
-  --components-color: #E67E22;
+  --components-color: #78ABA8;
   --errors: #E74C3C;
 }
 
@@ -26,14 +26,13 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family:  'roboto';
-  cursor: url(/portfolio-tsx/public/cursor.png) 15 15;
 }
 .title-main-projects{
     text-align: center;
     font-size: 3rem;
     padding: 30px;
     margin: 200px 0 100px 0;
-    color: #fff;
+    color: #000;
 }
 @media screen and (max-width: 480px) {
   .projects{

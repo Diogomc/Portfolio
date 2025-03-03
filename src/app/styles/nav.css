@@ -11,7 +11,7 @@
 }
 .nav-bar{
     background-color: var(--foreground);
-    color: #fff;
+    color: #000;
     position: fixed;
     left: 0;
     right: 0;
@@ -19,14 +19,22 @@
     width: 100vw;
     justify-content: space-between;
 }
-.menu-links, .menu-about{
+.menu-links, .menu-about, .menu-socials{
     display: flex;
     align-items: center;
-    padding: 20px;
+}
+.img-social{
+    width: 50px;
+}
+.menu-socials{
+    margin-right: 40px;
 }
 .menu-item{
     padding: 20px;
     font-size: 18px;
+}
+.menu-item-socials{
+    margin: 8px;
 }
 .menu-links .menu-item a:hover{
     color: var(--components-color);

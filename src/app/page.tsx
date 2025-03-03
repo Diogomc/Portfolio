@@ -3,12 +3,16 @@ import { About } from "@/components/About";
 import { Main } from "@/components/Main";
 import { Nav } from "@/components/Nav";
 import { Projects } from "@/components/Projects";
+import { Services } from "@/components/Services";
+import { Stack } from "@/components/Stack";
 
 export default function Home() {
   return (
     <div>
       <Nav />
       <Main />
+      <Services/>
+      <Stack/>
       <h1 className="title-main-projects" id="projects-section">Main Projects</h1>
       <div className="projects flex justify-center">
         <Projects
@@ -33,6 +37,7 @@ export default function Home() {
         tools={["typescript", "react", "css"]}
         />
         </div>
+
         <About/>
       </div>
   );
