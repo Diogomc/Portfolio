@@ -1,45 +1,64 @@
 @import url('globals.css');
 
-.title-about{
+.title-about {
     text-align: center;
     font-size: 3rem;
     padding: 30px;
     margin: 200px 0 100px 0;
-    color: #fff;
+    color: #000;
+
 }
-.title-about-text{
+
+.title-about-text {
     color: var(--components-color);
     font-size: 1.9rem;
 }
-.about-container{
+
+.about-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cartoon-image{
+
+.cartoon-image {
     width: 600px;
     height: 600px;
     object-fit: cover;
     opacity: 0.8;
 }
-.text-about{
+
+.text-about {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 200;
     margin: 70px;
     width: 700px;
 }
-.text-about p{
+
+.text-about p {
     padding: 3px;
 }
 
 @media screen and (max-width: 480px) {
-    .about-container{
+    .title-about{
+        color: #000;
+    }
+    .about-container {
         flex-direction: column;
     }
-    
-    .text-about{
+
+    .text-about {
         width: 400px;
 
+    }
+
+    .text-about p {
+        color: #000;
+        width: 100%;
+    }
+
+    .cartoon-image {
+        width: 100%;
+        object-fit: cover;
     }
 }

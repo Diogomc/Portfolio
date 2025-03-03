@@ -34,6 +34,9 @@
     .stack-container{
         flex-direction: column;
     }
+    .title-stack{
+        font-size: 3rem;
+    }
     .stack{
         padding: 100px;
     }
