@@ -1,5 +1,6 @@
 'use client'
 import { About } from "@/components/About";
+import { LittleAbout } from "@/components/LittleAbout";
 import { Main } from "@/components/Main";
 import { Nav } from "@/components/Nav";
 import { Projects } from "@/components/Projects";
@@ -11,6 +12,7 @@ export default function Home() {
     <div>
       <Nav />
       <Main />
+      <LittleAbout/>
       <Services/>
       <Stack/>
       <h1 className="title-main-projects" id="projects-section">Main Projects</h1>

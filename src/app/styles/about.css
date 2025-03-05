@@ -46,14 +46,12 @@
     .about-container {
         flex-direction: column;
     }
-
-    .text-about {
-        width: 400px;
-
-    }
-
     .text-about p {
         color: #000;
+        width: 100%;
+        font-size: 20px;
+    }
+    .text-about{
         width: 100%;
     }
 

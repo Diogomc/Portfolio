@@ -6,7 +6,7 @@
 
 :root {
   --background: #fff;
-  --foreground: #F0EBE3;
+  --foreground: #040D12;
   --font-color: #E0E0E0;
   --components-color: #78ABA8;
   --errors: #E74C3C;
@@ -39,6 +39,7 @@ body {
     flex-direction: column;
   }
   .title-main-projects{
-    margin-top: 20px;
+    margin: 40px 40px 40px 40px;
+
   }
 }

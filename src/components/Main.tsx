@@ -19,8 +19,8 @@ export const Main = () => {
             <div className="handsome">
                 <img className="handsome-image" src="handsome.jpg" alt="Diogo" />
             </div>
-
         </div>
+
 
     )
 }
