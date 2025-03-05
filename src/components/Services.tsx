@@ -1,8 +1,9 @@
 import '@/app/styles/services.css'
+import Typewriter from 'react-ts-typewriter'
 export const Services = () => {
     return (
         <div>
-            <h1 className="text-center text-black text-5xl mt-80" id='services'>Services</h1>
+            <h1 className="text-center text-black text-5xl mt-80" id='services'><Typewriter text={['Services', 'What I can make']} loop speed={150} delay={700}/></h1>
             <div className="container-cards">
                 <div className='cards'>
                     <img className='icon-services' src="website.png" alt="" />
