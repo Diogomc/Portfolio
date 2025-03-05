@@ -1,6 +1,6 @@
 import "@/app/styles/nav.css"
 import { useState } from "react"
-
+import { motion } from 'framer-motion'
 export const Nav = () => {
 
     const [menuOpened, setMenuOpened] = useState(false)
@@ -9,7 +9,11 @@ export const Nav = () => {
         setMenuOpened(!menuOpened);
     }
     return (
-        <nav className="nav-bar">
+        <motion.nav className="nav-bar"
+            initial={{ top: -100 }}
+            animate = {{top: 0}}
+            transition={{duration: 0.5}}
+        >
             <button className="menu-mobile" onClick={menuOpen}>
                 <img src={`${menuOpened ? 'menu_opened.jpg' : 'menu.png'}`} alt="menu" />
             </button>
@@ -38,9 +42,9 @@ export const Nav = () => {
                     <li className="menu-item-socials">
                         <a href="https://www.youtube.com/@DiogoCodess" target="_blank"><img className="ytb" src="youtube.png" /></a>
                     </li>
-                    
+
                 </ul>
             </div>
-        </nav>
+        </motion.nav>
     )
 }

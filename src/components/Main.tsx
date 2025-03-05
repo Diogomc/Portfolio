@@ -1,5 +1,7 @@
 import Typewriter from "react-ts-typewriter";
 import "@/app/styles/main.css"
+import { motion } from 'framer-motion';
+
 export const Main = () => {
     return (
         <div className="container-main">
@@ -16,9 +18,15 @@ export const Main = () => {
                 </button>
                 <button className="btn-main"><a href="#">Download Resume</a></button>
             </div>
-            <div className="handsome">
+
+            <motion.div className="handsome"
+            initial={{opacity: 0, x: -100}}
+            whileInView={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: -100}}
+            transition={{duration: 0.5}}
+            >
                 <img className="handsome-image" src="handsome.jpg" alt="Diogo" />
-            </div>
+            </motion.div>
         </div>
 
 
