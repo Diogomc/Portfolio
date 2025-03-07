@@ -56,7 +56,37 @@
 .menu-links .menu-item a:hover {
     color: var(--components-color);
 }
+@media screen and (max-width: 768px) {
+    .menu {
+        justify-content: center;
+        display: none;
+    }
+    .nav-bar{
+        width: 100vw;
+    }
 
+    .menu-opened {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .menu-links {
+        flex-direction: column;
+    }
+
+    .menu-about {
+        display: none;
+    }
+    .menu-socials{
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 480px) {
     .menu {
         justify-content: center;

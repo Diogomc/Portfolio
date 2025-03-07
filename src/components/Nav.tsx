@@ -11,11 +11,16 @@ export const Nav = () => {
     return (
         <motion.nav className="nav-bar"
             initial={{ top: -100 }}
-            animate = {{top: 0}}
-            transition={{duration: 0.5}}
+            animate={{ top: 0 }}
+            transition={{ duration: 0.5 }}
         >
             <button className="menu-mobile" onClick={menuOpen}>
-                <img src={`${menuOpened ? 'menu_opened.jpg' : 'menu.png'}`} alt="menu" />
+                <motion.img
+                    src={`${menuOpened ? 'menu_opened.jpg' : 'menu.png'}`} alt="menu"
+                    initial={{ rotate: 0 }}
+                    animate={{ rotate: menuOpened ? 90 : 0 }}
+                    transition={{ duration: 0.3 }}
+                />
             </button>
 
             <div className={`menu ${menuOpened ? 'menu-opened' : ''}`}>

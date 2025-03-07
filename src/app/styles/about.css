@@ -39,24 +39,51 @@
     padding: 3px;
 }
 
-@media screen and (max-width: 480px) {
-    .title-about{
-        color: #000;
-    }
+@media screen and (max-width: 1024px) {
     .about-container {
         flex-direction: column;
     }
+    .cartoon-image {
+        width: 100%;
+    }
+    .title-about-text {
+        text-align: center;
+        padding: 10px;
+    }
+    .text-about {
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-about {
+        color: #000;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
     .text-about p {
         color: #000;
         width: 100%;
         font-size: 20px;
     }
-    .text-about{
+
+    .text-about {
         width: 100%;
     }
 
     .cartoon-image {
         width: 100%;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title-about{
+        margin-top: 50px;
     }
 }

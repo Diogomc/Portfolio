@@ -10,7 +10,7 @@
 }
 .card-projects{
     background-color: var(--foreground);
-    width: 500px;
+    width: 100%;
     height: 520px;
     margin: 10px;
     color: #ccc;
@@ -46,3 +46,8 @@
     display: flex;
 }
 
+@media screen and (max-width: 768px) {
+    .projects-area{
+        padding: 10px;
+    }
+}

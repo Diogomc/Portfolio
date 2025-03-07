@@ -1,29 +1,34 @@
 @import url('globals.css');
 
-.container-main{
+.container-main {
     margin-top: 250px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.title-type{
+
+.title-type {
     display: flex;
     align-items: center;
 }
-.title-typewriter{
+
+.title-typewriter {
     width: 900px;
     font-family: 'oswald';
     font-weight: 300;
 }
-.title-writing{
+
+.title-writing {
     color: var(--components-color);
 }
-.text-description{
+
+.text-description {
     color: #5f5f5f;
     font-size: 30px;
     padding-top: 10px;
 }
-.btn-main{
+
+.btn-main {
     background-color: #78ABA8;
     font-size: 1.7rem;
     border-radius: 6px;
@@ -31,44 +36,88 @@
     margin: 20px 10px 0 0;
     color: #fff;
 }
-.btn-main:hover{
+
+.btn-main:hover {
     transform: scale(1.1);
     transition: 0.9s;
 }
-.handsome-image{
+
+.handsome-image {
     width: 600px;
     height: 600px;
     object-fit: contain;
 }
-.handsome-image:hover{
+
+.handsome-image:hover {
     opacity: 0.6;
     transition: 0.9s;
     border-radius: 0 60px 0 60px;
 }
 
+@media screen and (max-width: 1440px) {
+    .container-main {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container-main{
+        margin-top: 150px;
+    }
+    .title-typing{
+        font-size: 3rem;
+    }
+    .text-description{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title-typing{
+        font-size: 2.7rem;
+    }
+    .text-description{
+        font-size: 18px;
+    }
+    .btn-main{
+        font-size: 1.2rem;
+    }
+}
 
 @media screen and (max-width: 480px) {
-  
-    .container-main{
+
+    .container-main {
         margin-top: 120px;
         flex-direction: column;
         width: 100%;
     }
-    .title-typewriter{
+
+    .title-typewriter {
         width: 100%;
     }
-    .title-typing{
+
+    .title-typing {
         font-size: 2.4rem;
     }
-    .text-description{
+
+    .text-description {
         font-size: 1.4rem;
         padding: 10px;
     }
-    .btn-main{
+
+    .btn-main {
         padding: 7px;
         font-size: 1.4rem;
     }
-    .handsome-image{
+
+    .handsome-image {
         width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .title-typing{
+        font-size: 1.7rem;
+    }
+    .text-description{
+        font-size: 16px;
     }
 }
