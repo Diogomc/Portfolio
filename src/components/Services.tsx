@@ -11,6 +11,7 @@ export const Services = () => {
             exit={{opacity: 0, x: -100}}
             transition={{duration: 0.7}}
             >
+                
                 <div className='cards'>
                     <img className='icon-services' src="website.png" alt="" />
                     <h1 className="title-services">{`<Website Crafting>`}</h1>

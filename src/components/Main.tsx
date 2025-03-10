@@ -6,9 +6,9 @@ export const Main = () => {
     return (
         <div className="container-main">
             <div className="title-typewriter">
-                <h1 className="title-typing text-7xl text-black p-2">Hi, I'm Diogo!</h1>
+                <h1 className="title-typing text-7xl text-white p-2">Hi, I'm Diogo!</h1>
                 <div className="title-type">
-                    <h1 className="title-typing text-7xl text-black p-2">A Front-End</h1>
+                    <h1 className="title-typing text-7xl text-white p-2">A Front-End</h1>
                     <h1 className="title-typing title-writing text-7xl p-2"><Typewriter text="Developer..." loop speed={300} /></h1>
 
                 </div>
