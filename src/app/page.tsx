@@ -27,9 +27,9 @@ export default function Home() {
         <Projects
           urlImage="coffeeShop.png"
           nameProject="Coffee Breathing - In development"
-          urlProject="https://vercel.com/diogomcs-projects/coffee-breathing"
+          urlProject="https://coffee-breathing.vercel.app/"
           descriptionProject="A Project of a Coffee Shop website"
-          tools={["css", "tailwind"]}
+          tools={["css", "tailwind", "react", "typescript", "javascript"]}
         />
         <Projects
         urlImage="weather.png"
