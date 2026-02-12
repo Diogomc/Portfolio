@@ -1,34 +1,32 @@
 import Typewriter from "react-ts-typewriter";
-import "@/app/styles/main.css"
-import { motion } from 'framer-motion';
-
+import { Btn } from "./Btn";
+import { FaLinkedin } from "react-icons/fa";
+import { IoMdDownload } from "react-icons/io";
 export const Main = () => {
     return (
-        <div className="container-main">
-            <div className="title-typewriter">
-                <h1 className="title-typing text-7xl text-white p-2">Hi, I'm Diogo!</h1>
-                <div className="title-type">
-                    <h1 className="title-typing text-7xl text-white p-2">A Front-End</h1>
-                    <h1 className="title-typing title-writing text-7xl p-2"><Typewriter text="Developer..." loop speed={300} /></h1>
-
+        <div className="flex items-center m-32 h-[600px] 
+         max-md:w-full max-md:m-0 max-md:p-3 max-md:h-full max-md:flex-col-reverse max-md:my-14">
+            <div>
+                <div className="max-md:m-2">
+                    <p className="text-2xl tracking-widest text-second max-md:text-center">Olá, eu sou o Diogo!</p>
+                    <h1 className="text-6xl font-bold text-white max-md:text-4xl max-md:text-center">Desenvolvedor</h1>
+                    <h1 className="text-6xl font-bold text-white max-md:text-4xl max-md:text-center max-md:hidden">
+                        Fullstack<Typewriter text={"..."} speed={600} />
+                    </h1>
                 </div>
-                <p className="text-description">I'm also a .NET developer and a Student of Software Engineering</p>
-                <button className="btn-main">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=diogo.marcondes2004@gmail.com" target="_blank">Contact Me</a>
-                </button>
-                <button className="btn-main"><a href="#">Download Resume</a></button>
+                <h1 className="hidden max-md:block text-6xl font-bold text-white max-md:text-4xl max-md:text-center">
+                    Fullstack
+                </h1>
+                <p className="w-1/2 text-lg py-6 text-neutral-300 max-md:w-full max-md:text-base max-md:text-center">Sou desenvolvedor fullstack com experiência em React e .NET, apaixonado por criar soluções eficientes e escaláveis. Tenho foco em entregar aplicações modernas, com interfaces intuitivas e backends robustos, sempre buscando unir performance e qualidade de código.</p>
+                <div className="flex max-md:justify-center">
+                    <Btn name="Contato" />
+                    <button className="flex items-center rounded-md mx-6 hover:bg-foreground hover:text-black p-2">Download CV<IoMdDownload size={20} /></button>
+                </div>
+
             </div>
-
-            <motion.div className="handsome"
-            initial={{opacity: 0, x: -100}}
-            whileInView={{opacity: 1, x: 0}}
-            exit={{opacity: 0, x: -100}}
-            transition={{duration: 0.5}}
-            >
-                <img className="handsome-image" src="handsome.jpg" alt="Diogo" />
-            </motion.div>
+            <div>
+                <img className="shadow-2xl max-md:rounded-full max-md:w-40" src="/handsome.jpg" alt="" />
+            </div>
         </div>
-
-
     )
 }

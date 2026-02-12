@@ -5,11 +5,12 @@
 @tailwind utilities;
 
 :root {
-  --background: #fff;
-  --foreground: #040D12;
+  --background: #0b0809;
+  --foreground: rgb(212 212 212);
   --font-color: #E0E0E0;
-  --components-color: #78ABA8;
+  --second: #04009A;
   --errors: #E74C3C;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +26,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  second:var(--second);
   font-family:  'roboto';
 }
 .title-main-projects{

@@ -3,7 +3,7 @@ import Typewriter from 'react-ts-typewriter'
 import { motion } from 'framer-motion';
 export const Stack = () => {
     return (
-        <div className='container-stack'>
+        <div className='container-stack bg-background'>
             <h2 className='text-center text-5xl mt-20 text-white'>Skills.</h2>
             <motion.div className="front"
                 initial={{ opacity: 0, y: -100 }}
@@ -11,7 +11,7 @@ export const Stack = () => {
                 exit={{ opacity: 1, y: -100 }}
                 transition={{ duration: 0.8 }}
             >
-               <h2 className='title-stack'>Front-end</h2>
+               <h2 className='title-stack'>Front-end</h2> 
                 <ul className='ul-icons'>
 
                     <li><img className='icon-tool' src="/stackIcons/react.svg" alt="react" /></li>

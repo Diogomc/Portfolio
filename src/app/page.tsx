@@ -13,9 +13,8 @@ export default function Home() {
       <Nav />
       <Main />
       <LittleAbout/>
-      <Services/>
       <Stack/>
-      <h1 className="title-main-projects" id="projects-section">Main Projects</h1>
+      <Services/>
       <div className="projects flex justify-center">
         <Projects
           urlImage="kepler.jpg"
@@ -39,6 +38,8 @@ export default function Home() {
         tools={["typescript", "react", "css"]}
         />
         </div>
+      <h1 className="title-main-projects" id="projects-section">Main Projects</h1>
+     
 
         <About/>
       </div>
