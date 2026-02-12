@@ -1,23 +1,36 @@
-import "@/app/styles/about.css"
-
-
-
-
 export const About = () => {
+    const timeline = [
+      {
+        period: "2018 - 2020",
+        title: "Hardware & Robotics",
+        description: "Exploration and development of hardware systems and robotics projects."
+      },
+      {
+        period: "2023 - 2025",
+        title: "ADS Formation",
+        description: "Academic formation in Analysis and Systems Development."
+      },
+      {
+        period: "2025 - 2028",
+        title: "Software Engineering",
+        description: "Advanced studies and specialization in Software Engineering."
+      }
+    ];
+  
     return (
-        <div>
-            <h1 className="title-about" id="about">About me</h1>
-            <div className="about-container">
-                <img className="cartoon-image" src="/cartoon.jpg" alt="cartoon" />
-                <div className="text-about">
-                    <h1 className="title-about-text">Hello, I'm Diogo.</h1>
-                    <p>I'm 20 years old, and I am studying Software Engineering, but I also have another degree in Systems Analysis and Development.</p>
-                    <p></p>
-                    <p>I started my studies more or less at the end of 2022.</p>
-                    <p>Unfortunately, I don't have a professional experiences in this area, but I work hard on my personal projects and study every day to make my dreams come true</p>
-                    <p>So, I'm willing to colaborate with a team and contribute with my ideas, skills and effort for corporation sucess.</p>
-                </div>
+      <div className="mt-28 px-6">
+        <h1 className="text-center text-5xl mb-12">About Me</h1>
+        <div className="max-w-3xl mx-auto relative border-l-4 border-blue-500">
+          {timeline.map((item, index) => (
+            <div key={index} className="mb-10 ml-6 border-foreground border p-8">
+              <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-2.5 border border-white"></div>
+              <h3 className="text-xl font-semibold">{item.period}</h3>
+              <p className="text-lg text-gray-700">{item.title}</p>
+              <p className="text-gray-500">{item.description}</p>
             </div>
+          ))}
         </div>
-    )
-}
+      </div>
+    );
+  };
+  

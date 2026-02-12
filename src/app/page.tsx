@@ -1,6 +1,6 @@
 'use client'
 import { About } from "@/components/About";
-import { LittleAbout } from "@/components/LittleAbout";
+import { Footer } from "@/components/Footer";
 import { Main } from "@/components/Main";
 import { Nav } from "@/components/Nav";
 import { Projects } from "@/components/Projects";
@@ -12,36 +12,12 @@ export default function Home() {
     <div>
       <Nav />
       <Main />
-      <LittleAbout/>
-      <Stack/>
-      <Services/>
-      <div className="projects flex justify-center">
-        <Projects
-          urlImage="kepler.jpg"
-          nameProject="KeplerPlay - In development"
-          urlProject="https://kepler-play.vercel.app/"
-          descriptionProject="A project of a stream movies plataform"
-          tools={["typescript", "react", "tailwind", "css"]}
-        />
-        <Projects
-          urlImage="coffeeShop.png"
-          nameProject="Coffee Breathing - In development"
-          urlProject="https://coffee-breathing.vercel.app/"
-          descriptionProject="A Project of a Coffee Shop website"
-          tools={["css", "tailwind", "react", "typescript", "javascript"]}
-        />
-        <Projects
-        urlImage="weather.png"
-        nameProject="Smart Weather - In development"
-        urlProject="https://weather-app-rho-black-11.vercel.app/"
-        descriptionProject="A Weather forecast consultation software"
-        tools={["typescript", "react", "css"]}
-        />
-        </div>
-      <h1 className="title-main-projects" id="projects-section">Main Projects</h1>
-     
-
-        <About/>
-      </div>
+      <About />
+      <Stack />
+      <Services />
+      <h1 className="text-center text-5xl py-12">Academic Projects</h1>
+      <Projects />
+      <Footer/>
+    </div>
   );
 }

@@ -40,7 +40,7 @@ export const Nav = () => {
                     <Link href="/main" className="flex items-center p-[0.5px] max-md:text-lg"><IoMdPaper size={20} className="mr-2" />Meu Currículo</Link>
                 </li>
             </ul>
-            <ul className={` hidden max-md:block flex max-md:block max-md:pl-8 max-md:border-t max-md:border-neutral-500 p-5 ${open ? "max-md:hidden" : ""}`} >
+            <ul className={` hidden  flex max-md:block max-md:pl-8 max-md:border-t max-md:border-neutral-500 p-5 ${open ? "max-md:hidden" : ""}`} >
                 <li className="hidden max-md:text-sm max-md:block">Social</li>
                 <li className="flex items-center justify-between">
                     <a href="" target="_blank" className="max-md:flex max-md:items-center max-md:text-lg p-2"><FaGithub size={20} className="mr-2" />GitHub</a>
