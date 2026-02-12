@@ -80,8 +80,8 @@ export const Projects = () => {
                         <p>WeatherApp solves this by providing real-time forecasts, all in a clean and responsive interface.</p>
                     </div>
                     <div className="flex justify-center items-center">
-                        <Btn name="Live" link="https://kepler-play.vercel.app/" target="_blank" />
-                        <Btn name="GitHub" link="https://github.com/Diogomc/KeplerPlay" target="_blank" />
+                        <Btn name="Live" link="https://weather-app-rho-black-11.vercel.app/" target="_blank" />
+                        <Btn name="GitHub" link="https://github.com/Diogomc/weatherAPP" target="_blank" />
                     </div>
                 </div>
             </div>
